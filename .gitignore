@@ -1,0 +1,32 @@
+# Ignore Eclipse workspace settings
+.metadata/
+*.log
+tmp/
+*.tmp
+*.bak
+*.swp
+
+# Ignore Eclipse project-specific files
+.classpath
+.project
+.settings/
+
+# Ignore compiled class files
+bin/
+target/
+build/
+
+# Ignore OS generated files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Ignore Maven or Gradle build data (if used)
+.mvn/
+.gradle/
+
+# Ignore OneDrive sync files
+~$*
+*.lnk
+
+
