@@ -8,7 +8,7 @@ import java.sql.SQLException;
 public class TableCreation {
 	public static void  main(String[] args) {
 		try {
-			Class.forName("com.mysql.cj.jdbc.Driver");
+//			Class.forName("com.mysql.cj.jdbc.Driver");
 			System.out.println("driver class is loaded and registered");
 			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/jdbc_steps?user=root && password=SaiVarshith@03");
 			System.out.println("Connection established");
@@ -18,7 +18,7 @@ public class TableCreation {
 			boolean b = stmt.execute("create table emp (eid int, ename varchar(40), esal double)");
 			System.out.println(b);
 			
-		} catch (ClassNotFoundException | SQLException e) {
+		} catch (SQLException e) {
 			e.printStackTrace();
 		}
 	}
